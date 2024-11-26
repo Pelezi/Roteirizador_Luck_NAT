@@ -5639,4 +5639,6 @@ if servico_roteiro and data_roteiro:
             if response.status_code == 200:
                     st.success(f"Informativos Enviados com Sucesso!")
             else:
-                st.error(f"Erro. Favor contactar o suporte")
+                # st.error(f"Erro. Favor contactar o suporte")
+                # mostrar erro do response
+                st.error(f"Erro ao enviar informativos. Response: {response.text}")
